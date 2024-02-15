@@ -10,7 +10,6 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
-  height: 200vh;
 }
 
 [id] {
@@ -181,12 +180,8 @@ header a {
   border: 1px solid #333;
 }
 
-.contact-address-content {
-  padding: 1em 20%;
-}
-
 .contact-address {
-  border-right: 5px solid #333;
+  border-bottom: 5px solid #333;
 }
 
 .contact-address h5 {
@@ -233,6 +228,10 @@ footer {
   .carousel-item {
     height: 600px;
   }
+  .contact-address {
+    border-bottom: none;
+    border-right: 5px solid #333;
+  }
 }
 
 @media (min-width: 992px) {
@@ -251,6 +250,10 @@ footer {
 
   .card.card-hot {
     scale: 1.1;
+  }
+
+  .contact-address-content {
+    padding: 1em 20%;
   }
 }
 
