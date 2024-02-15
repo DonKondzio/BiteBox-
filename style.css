@@ -31,7 +31,7 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-image: url("img/hero-img.jpg");
+  background-image: url("img/hero-img-small.jpg");
   background-size: cover;
   background-position: center;
   z-index: 0;
@@ -235,6 +235,10 @@ footer {
 }
 
 @media (min-width: 992px) {
+  .hero-img {
+    background-image: url("img/hero-img.jpg");
+  }
+
   .aboutcompany,
   .aboutcompany .btn {
     font-size: 1.6rem;
