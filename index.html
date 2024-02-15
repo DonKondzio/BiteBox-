@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BiteBox</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/bb8b602bdf.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header id="home" class="hero-img text-light">
+      <h1>BiteBox</h1>
+      <p>Najlepszy catering w powiecie!</p>
+      <div class="hero-shadow"></div>
+      <a href="#aboutcompany" class="animate-pulse">
+        <i class="bi bi-arrow-down-short"></i>
+      </a>
+    </header>
+    <nav class="navbar navbar-expand-lg sticky-top bg-body-secondary py-4 mb-5">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><i class="bi bi-box box-color"></i
+          ><span class="fork-color">Bite</span><span class="box-color">Box</span
+          ><i class="fa-solid fa-utensils fork-color"></i
+        ></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto gap-md-5">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#aboutcompany">O Firmie</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">Cennik</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Kontakt</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section id="aboutcompany" class="aboutcompany py-5">
+        <div class="container">
+          <h3 class="section-heading">O firmie</h3>
+          <div class="aboutcompany-upper row">
+            <div class="col-md-4 col-xl-4 rounded">
+              <img
+                class="img-fluid h-100"
+                src="img/company.jpg"
+                alt="Różne zdrowe potrawy w miskach"
+              />
+            </div>
+            <div
+              class="col d-flex flex-column justify-content-between py-5 px-md-5 py-md-3"
+            >
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati, molestias porro cupiditate harum quod ea et. Eum
+                consequatur similique quam molestias suscipit cumque beatae
+                ipsum. Laborum, perferendis. Nam, cumque distinctio!
+              </p>
+              <div
+                class="row d-flex justify-content-between align-items-center"
+              >
+                <p class="col-7">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim
+                  laudantium tenetur ab.
+                </p>
+                <a
+                  href="#contact"
+                  class="col-3 col-xl-2 btn btn-outline-secondary px-3 py-3"
+                >
+                  Kontakt
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div
+                class="carousel-item carousel-img-one active"
+                data-bs-interval="10000"
+              >
+                <div class="carousel-caption d-none d-md-block">
+                  <p class="display-5">Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="hero-shadow"></div>
+              </div>
+              <div
+                class="carousel-item carousel-img-two"
+                data-bs-interval="2000"
+              >
+                <div class="carousel-caption d-none d-md-block">
+                  <p class="display-5">Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="hero-shadow"></div>
+              </div>
+              <div class="carousel-item carousel-img-three">
+                <div class="carousel-caption d-none d-md-block">
+                  <p class="display-5">Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="hero-shadow"></div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section id="pricing" class="pricing py-5 bg-body-secondary">
+        <div class="container">
+          <h3 class="section-heading">Cennik</h3>
+          <div class="card-group">
+            <div class="card">
+              <img
+                src="img/offer-vegetarian.jpg"
+                class="card-img-top img-fluid"
+                alt="Jedzenie wegetariańskie"
+              />
+
+              <div class="card-body px-5">
+                <h5 class="card-title">Wegetariańska</h5>
+                <p class="card-text card-text-price">Od 53zł</p>
+                <p class="card-text pt-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <button class="btn btn-secondary mt-3 w-100 py-3">
+                  Wybieram
+                </button>
+              </div>
+            </div>
+            <div class="card card-hot">
+              <img
+                src="img/offer-standard.jpg"
+                class="card-img-top"
+                alt="Typowe jedzenie"
+              />
+
+              <div class="card-body px-5">
+                <h5 class="card-title">
+                  Standard<i class="fa-solid fa-fire text-primary"></i>
+                </h5>
+                <p class="card-text card-text-price">Od 50zł</p>
+                <p class="card-text pt-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <button class="btn btn-primary mt-3 w-100 py-3">
+                  Wybieram
+                </button>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="img/offer-keto.jpg"
+                class="card-img-top"
+                alt="Potrawy keto"
+              />
+
+              <div class="card-body px-5">
+                <h5 class="card-title">Keto</h5>
+                <p class="card-text card-text-price">Od 58zł</p>
+                <p class="card-text pt-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <button class="btn btn-secondary mt-3 w-100 py-3">
+                  Wybieram
+                </button>
+              </div>
+            </div>
+
+            <div class="card">
+              <img
+                src="img/offer-vegan.jpg"
+                class="card-img-top img-fluid"
+                alt="Jedzenie wegetariańskie"
+              />
+
+              <div class="card-body px-5">
+                <h5 class="card-title">Wegańska</h5>
+                <p class="card-text card-text-price">Od 55zł</p>
+                <p class="card-text pt-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <button class="btn btn-secondary mt-3 w-100 py-3">
+                  Wybieram
+                </button>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="img/offer-glutenfree.jpg"
+                class="card-img-top"
+                alt="Typowe jedzenie"
+              />
+
+              <div class="card-body px-5">
+                <h5 class="card-title">Bez Glutenu i Laktozy</h5>
+                <p class="card-text card-text-price">Od 53zł</p>
+                <p class="card-text pt-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <button class="btn btn-secondary mt-3 w-100 py-3">
+                  Wybieram
+                </button>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="img/offer-mediterranean.jpg"
+                class="card-img-top"
+                alt="Potrawy keto"
+              />
+
+              <div class="card-body px-5">
+                <h5 class="card-title">Śródziemnomorska</h5>
+                <p class="card-text card-text-price">Od 58zł</p>
+                <p class="card-text pt-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <button class="btn btn-secondary mt-3 w-100 py-3">
+                  Wybieram
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="contact py-5">
+        <div class="container">
+          <h3 class="section-heading">Kontakt</h3>
+          <div class="row contact-container">
+            <div class="col-md-4 contact-address">
+              <div class="contact-address-content py-4">
+                <h5>Adres</h5>
+                <div class="contact-address-middle py-4">
+                  <p>Wałowa 0</p>
+                  <p>Warszawa</p>
+                  <p>00-001</p>
+                </div>
+                <div class="contact-address-bottom pb-4">
+                  <p>+48 000 000 000</p>
+                  <p>adresemail@gmail.com</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8 contact-form px-5 py-4">
+              <form class="contact-form">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label>Imię i nazwisko:</label>
+                      <input type="text" />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label>Adres mailowy:</label>
+                      <input type="text" />
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group">
+                      <label>Wybierz temat</label>
+                      <select>
+                        <option selected>Oferta</option>
+                        <option>Dostawa</option>
+                        <option>Reklamacje</option>
+                        <option>Zniżki</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group">
+                      <label>Treść wiadomości:</label>
+                      <textarea rows="5"></textarea>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-body-secondary text-dark text-center p-4">
+      <p>
+        &copy; Copyright <i class="bi bi-box box-color"></i
+        ><span class="fork-color">Bite</span><span class="box-color">Box</span
+        ><i class="fa-solid fa-utensils fork-color"></i>
+      </p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

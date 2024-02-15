@@ -1,0 +1,264 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  height: 200vh;
+}
+
+[id] {
+  scroll-margin-top: 92px;
+}
+
+.section-heading {
+  margin-bottom: 0.5em;
+  font-size: 5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #555;
+}
+
+.hero-img {
+  position: relative;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("img/hero-img.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+h1 {
+  font-size: 8rem;
+  font-weight: bold;
+}
+
+header p {
+  font-size: 3rem;
+}
+
+header a {
+  position: absolute;
+  bottom: 0;
+  font-size: 5rem;
+  color: #fff;
+}
+
+.animate-pulse {
+  animation: pulse 0.5s infinite alternate-reverse;
+}
+
+.hero-shadow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+/* nav */
+
+.box-color {
+  color: hsl(41, 44%, 48%);
+}
+
+.fork-color {
+  color: hsl(193, 8%, 22%);
+}
+
+.navbar-brand {
+  font-size: 2.4rem;
+}
+
+.navbar-toggler {
+  padding: 1.5rem;
+  font-size: 2rem;
+}
+
+.nav-item {
+  font-size: 2.4rem;
+}
+
+/* aboutcompany */
+
+.aboutcompany-upper {
+  margin-bottom: 50px;
+}
+
+.aboutcompany,
+.aboutcompany .btn {
+  font-size: 1.4rem;
+}
+
+.aboutcompany img {
+  object-fit: cover;
+  transform: translate3d(0, 0, 1px);
+}
+.aboutcompany button {
+  align-self: end;
+  font-size: 2rem;
+}
+
+.carousel {
+  margin-bottom: 2em;
+}
+
+.carousel-item {
+  position: relative;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.carousel-caption {
+  bottom: 50%;
+  transform: translateY(50%);
+}
+
+.carousel-img-one {
+  background-image: url("img/carousel-1.jpg");
+}
+
+.carousel-img-two {
+  background-image: url("img/carousel-2.jpg");
+}
+
+.carousel-img-three {
+  background-image: url("img/carousel-3.jpg");
+}
+
+/* pricing */
+.pricing .card-group {
+  margin-top: 5em;
+  gap: 3em;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.pricing .card {
+  min-width: 300px;
+}
+
+.pricing .card-title {
+  margin: 1em 0;
+  font-size: 2.6rem;
+  font-weight: bold;
+}
+
+.pricing img {
+  height: 220px;
+  object-fit: cover;
+  transform: translate3d(0, 0, 1px);
+}
+
+.card .btn {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+.card-text-price {
+  font-size: 2.4rem;
+  padding-bottom: 0.5em;
+  border-bottom: 2px solid #333;
+}
+
+/* contact */
+
+.contact-container {
+  border: 1px solid #333;
+}
+
+.contact-address-content {
+  padding: 1em 20%;
+}
+
+.contact-address {
+  border-right: 5px solid #333;
+}
+
+.contact-address h5 {
+  color: #555;
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.contact-address p {
+  font-size: 1.6rem;
+}
+
+.contact-form .form-group {
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contact-form label {
+  font-size: 1.6rem;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  font-size: 1.6rem;
+  padding: 0.5rem;
+}
+
+.contact-form select {
+  padding: 0.5rem;
+  text-align: center;
+}
+
+/* footer */
+
+footer {
+  font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+  .carousel-item {
+    height: 600px;
+  }
+}
+
+@media (min-width: 992px) {
+  .aboutcompany,
+  .aboutcompany .btn {
+    font-size: 1.6rem;
+  }
+
+  [id] {
+    scroll-margin-top: 76px;
+  }
+
+  .pricing .card-group {
+    gap: 5em;
+  }
+
+  .card.card-hot {
+    scale: 1.1;
+  }
+}
+
+@keyframes pulse {
+  from {
+    scale: 1;
+  }
+  to {
+    scale: 1.2;
+  }
+}
